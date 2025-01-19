@@ -65,7 +65,7 @@ if game.PlaceId == 10089475328 then
 
     Tabs.Main:AddParagraph({
         Title = "Info",
-        Content = "Don't use Get Exp for a long time"
+        Content = "Don't use Get Exp for a long time, dont jump"
     })
 
     Tabs.Main:AddToggle("MyToggle", {

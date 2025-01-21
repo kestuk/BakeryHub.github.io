@@ -25,7 +25,8 @@ if game.PlaceId == 10089475328 then
     local Frieren = workspace:FindFirstChild("snow area") :: Folder
     local Secrets = workspace:FindFirstChild("Secrets") :: Folder
     local secretBraceletDoor = Secrets:FindFirstChild("Return Door") :: Model
-
+    local FarmExp = false
+    
     local cache = {
       expPad = Pads.ExpPad,
       itemPad = Pads.ItemDropper,
@@ -34,7 +35,7 @@ if game.PlaceId == 10089475328 then
       frierenStaff = Frieren:FindFirstChild("Secret tp 1") :: Part,
     }
 
-    local isfarmExp = false
+    
 
     --Functions
     function Teleport(teleportPlace)
@@ -72,8 +73,8 @@ if game.PlaceId == 10089475328 then
         Title = "Get Exp",
         Default = false,
         Callback = function(state)
-            isfarmExp = state
-            while isfarmExp do
+            FarmExp = state
+            while FarmExp do
             firetouchinterest(LPlayer.Character.HumanoidRootPart, cache.expPad, 0)
             firetouchinterest(LPlayer.Character.HumanoidRootPart, cache.expPad, 1)
             wait(0.01)

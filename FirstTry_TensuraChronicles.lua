@@ -1,6 +1,4 @@
 
-if getgenv().PMAO == true return end
-getgenv().PMAO = true
     local CurrentVersion = "TC.0.1.0"
     
     --Call the library

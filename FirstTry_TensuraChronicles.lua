@@ -1,6 +1,7 @@
-local Workspace = game:GetService("Workspace")
-if game.PlaceId == 10089475328 then
-    local CurrentVersion = "TC.0.0.1"
+
+if getgenv().PMAO == true return end
+getgenv().PMAO = true
+    local CurrentVersion = "TC.0.1.0"
     
     --Call the library
     local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
@@ -20,6 +21,7 @@ if game.PlaceId == 10089475328 then
 
     --Local Vars
     getgenv().TPPlace = "string"
+    local Workspace = game:GetService("Workspace")
     local LPlayer = game.Players.LocalPlayer
     local Pads = Workspace.Pads
     local Frieren = workspace:FindFirstChild("snow area") :: Folder

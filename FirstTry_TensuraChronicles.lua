@@ -21,9 +21,8 @@ getgenv().PMAO = true
 
     --Local Vars
     getgenv().TPPlace = "string"
-    local Workspace = game:GetService("Workspace")
     local LPlayer = game.Players.LocalPlayer
-    local Pads = Workspace.Pads
+    local Pads = workspace:FindFirstChild("Pads") :: Folder
     local Frieren = workspace:FindFirstChild("snow area") :: Folder
     local Secrets = workspace:FindFirstChild("Secrets") :: Folder
     local secretBraceletDoor = Secrets:FindFirstChild("Return Door") :: Model
